@@ -1,10 +1,11 @@
 import React from "react";
+import "./style.css"
 
 function Navbar(){
 
     return (
-        <div>
-            <h4>Nvabar JS</h4>
+        <div className="navbar-container">
+           navbar
         </div>
     )
 

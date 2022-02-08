@@ -1,13 +1,13 @@
-import { Layout } from "antd";
 import React from "react";
+import Navbar from "../Navbar";
 import Sidebar from "../Sidebar";
 
 function Dashboard(props) {
-  const { sidebar } = props;
+  const { sidebar, navbar } = props;
   return (
-    <>
-      <h1>Dashboard</h1>
+    <>  
       {sidebar && <Sidebar />}
+      {navbar && <Navbar />}
     </>
   );
 }

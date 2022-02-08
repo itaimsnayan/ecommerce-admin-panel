@@ -1,0 +1,10 @@
+.sidebar-container{
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    height: 90vh;
+    width: 250px;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    overflow: hidden;
+}
