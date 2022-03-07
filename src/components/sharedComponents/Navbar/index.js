@@ -4,7 +4,7 @@ import "./style.css"
 function Navbar(){
 
     return (
-        <div className="navbar-container">
+        <div className="navbar-container px-4 d-flex align-items-center">
            navbar
         </div>
     )

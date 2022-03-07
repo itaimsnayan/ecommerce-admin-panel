@@ -5,6 +5,13 @@ class NavigationService {
     this.navItems = [
       {
         id: 1,
+        title: "Dashboard",
+        key: "dash",
+        icon: <TagOutlined />,
+        link: "/dashboard"
+      },
+      {
+        id: 2,
         title: "Inventory",
         key: "inv",
         icon: <TagOutlined />,
@@ -12,15 +19,17 @@ class NavigationService {
           {
             id: 1,
             title: "Inventories",
+            link: "/inventory/list"
           },
           {
             id: 2,
             title: "Add Inventory",
+            link: "/inventory/add"
           },
         ],
       },
       {
-        id: 2,
+        id: 3,
         title: "Category",
         key: "cat",
         icon: <TagOutlined />,
@@ -28,15 +37,17 @@ class NavigationService {
           {
             id: 1,
             title: "Categories",
+            link: "/category/list"
           },
           {
             id: 2,
-            title: "Add Inventory",
+            title: "Add Category",
+            link: "/category/add"
           },
         ],
       },
       {
-        id: 3,
+        id: 4,
         title: "Sub Category",
         key: "subcat",
         icon: <TagOutlined />,
@@ -44,15 +55,17 @@ class NavigationService {
           {
             id: 1,
             title: "Sub Categories",
+            link: "/subcategory/list"
           },
           {
             id: 2,
             title: "Add Sub Category",
+            link: "/subcategory/add"
           },
         ],
       },
       {
-        id: 4,
+        id: 5,
         title: "Product",
         key: "pro",
         icon: <TagOutlined />,
@@ -60,10 +73,12 @@ class NavigationService {
           {
             id: 1,
             title: "Products",
+            link: "/product/list"
           },
           {
             id: 2,
             title: "Add Product",
+            link: "/product/add"
           },
         ],
       },

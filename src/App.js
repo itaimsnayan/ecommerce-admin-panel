@@ -1,28 +1,36 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/Dashboard";
-<<<<<<< HEAD
-import Sidebar from "./components/Sidebar";
-import 'antd/dist/antd.css';
-=======
+import Sidebar from "./components/sharedComponents/Sidebar";
+import Navbar from "./components/sharedComponents/Navbar";
 import "antd/dist/antd.css";
->>>>>>> bc3239b837574281ca82c4758c675de8227fd4ab
+import Login from "./components/Login";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Routes>
-<<<<<<< HEAD
-          <Route path="/" exact element={<Dashboard sidebar={true} navbar={true} />} />
-=======
-          <Route
-            path="/dashboard"
-            exact
-            element={<Dashboard sidebar={true} />}
-          />
->>>>>>> bc3239b837574281ca82c4758c675de8227fd4ab
-        </Routes>
+        <div>
+          <Navbar />
+          <Sidebar />
+          <Routes>
+            <Route
+              path="/dashboard"
+              element={<Dashboard />}
+              exact
+            />
+          </Routes>
+        </div>
+
+        <div>
+          <Routes>
+            <Route
+              path="/"
+              element={<Login />}
+              exact
+            />
+          </Routes>
+        </div>
       </Router>
     </div>
   );

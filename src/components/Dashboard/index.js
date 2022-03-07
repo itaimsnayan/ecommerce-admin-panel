@@ -1,13 +1,12 @@
-import React from "react";
-import Navbar from "../Navbar";
-import Sidebar from "../Sidebar";
+import React from "react"; 
 
 function Dashboard(props) {
-  const { sidebar, navbar } = props;
+  
   return (
-    <>  
-      {sidebar && <Sidebar />}
-      {navbar && <Navbar />}
+    <>
+      <div className="main-content-wrapper">
+         Dashboard
+      </div>
     </>
   );
 }
