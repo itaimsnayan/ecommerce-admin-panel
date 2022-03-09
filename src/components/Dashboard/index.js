@@ -1,7 +1,7 @@
-import React from "react"; 
+import React from "react";  
 
-function Dashboard(props) {
-  
+function Dashboard(props) { 
+   
   return (
     <>
       <div className="main-content-wrapper">

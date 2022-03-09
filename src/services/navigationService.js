@@ -2,6 +2,8 @@ import { TagOutlined } from "@ant-design/icons";
 
 class NavigationService {
   constructor() {
+    this.showNavbar = ["/dashboard", "/inventory/list", "/inventory/add"]
+    this.showSidebar = ["/dashboard", "/inventory/list", "/inventory/add"]
     this.navItems = [
       {
         id: 1,

@@ -8,9 +8,16 @@
 
 .main-content-wrapper {
 	position: absolute;
-    top: 10vh;
-    left: 250px;
-    background: #f7f7f7;
-    width: calc(100% - 250px);
+	top: 10vh;
+	left: 250px;
+	background: #f7f7f7;
+	width: calc(100% - 250px);
 	padding: 1rem;
+}
+
+.ant-menu-inline.ant-menu-root .ant-menu-item,
+.ant-menu-inline.ant-menu-root .ant-menu-submenu-title {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 1.5rem 20px !important;
 }
